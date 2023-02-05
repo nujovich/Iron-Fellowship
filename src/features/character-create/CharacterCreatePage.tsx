@@ -16,6 +16,7 @@ import { StatsField } from "./components/StatsField";
 import { createFirebaseCharacter } from "./api/createCharacter";
 import { StatsMap } from "../../types/Character.type";
 import { useCampaignStore } from "../../stores/campaigns.store";
+import { PhotoCharacter } from "./components/PhotoCharacter";
 
 export type AssetArrayType = [
   StoredAsset | undefined,
@@ -99,6 +100,7 @@ export function CharacterCreatePage() {
   return (
     <>
       <PageBanner>Create your Character</PageBanner>
+      <PhotoCharacter/>
       <Formik
         initialValues={{
           name: "",
